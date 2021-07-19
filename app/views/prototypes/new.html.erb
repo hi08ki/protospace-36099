@@ -4,7 +4,7 @@
       <h2 class="page-heading">新規プロトタイプ投稿</h2>
       <%#= form_with(model: @prototype, prototypes_path, local: true) do |form| %>
         <%# 部分テンプレートでフォームを表示する %>
-        <%= render partial: "form" %>
+        <%= render partial: "form", locals: { prototype: @prototype } %>
       <%# end %>
         
     </div>
